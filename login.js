@@ -14,7 +14,7 @@ document.getElementById('btn-login').addEventListener('click', function(){
     if(contactNumber == 'admin' && pin == 'admin123'){
         console.log("login success");
         alert('login success');
-        window.location.assign('/index.html')
+        window.location.assign('home.html')
     }
     else{
     alert('login failed')
