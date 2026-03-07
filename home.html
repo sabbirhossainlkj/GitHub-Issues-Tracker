@@ -32,8 +32,8 @@
 </head>
 <body>
     <!-- navbar section -->
-<div class="bg-white shadow border p-4 flex justify-between items-center">
-  <div class="border flex gap-3 justify-center items-center">
+<div class="bg-white shadow p-4 flex justify-between items-center">
+  <div class="flex gap-3 justify-center items-center">
     <img class="w-10" src="./assets/github-logo.png" alt="">
       <h1 class=" text-xl font-bold">GitHub Issues Tracker</h1>
   </div>
@@ -41,7 +41,56 @@
     <input id="search" class="border px-3 py-1 rounded" type="text" placeholder="Search issue...">
     <button id="" class="bg-blue-500 text-white px-4 py-1 rounded"><i class="fa-solid fa-plus"></i> New Issue</button>
   </div>
-</div>  
+</div>
+<!-- main section  -->
+ <main class="my-5">
+    <!-- section 01 -->
+  <section class="flex gap-6 p-5 w-10/12 mx-auto bg-emerald-200 shadow-md rounded-md">
+        <button onclick="loaddata()" class="btn btn-primary px-10 text-white">All</button>
+
+        <button class="btn  btn-outline px-10 text-neutral-500">Open</button>
+        
+        <button class="btn  btn-outline px-10 text-neutral-500">Closed</button>
+  </section>
+  <!-- issues section -->
+   <section  class="p-5 w-10/12 mx-auto bg-emerald-200 shadow-md rounded-md mt-3">
+ <div class="flex justify-between items-center">
+    <div class="flex gap-2 items-center">
+        <img class="" src="./assets/Aperture.png" alt="">
+        <div>
+            <h4 class="font-bold text-[15px]">50 Issues</h4>
+            <p class="text-sm text-neutral-500">Track and manage your project issues</p>
+        </div>
+    </div>
+    <div class="flex gap-3">
+        <p class="font-semibold text-neutral-700">Open</p>
+        <p class="font-semibold text-neutral-700">Closed</p>
+    </div>
+ </div>
+   </section>
+  <!-- all card section -->
+   <div id="all-card" class="mt-5 w-10/12 mx-auto  grid grid-cols-4 gap-4  bg-white shadow shadow-slate-300 p-4" >
+    <div>
+        
+    </div>
+    
+   <!-- <div class="card shadow p-4 bg-slate-200 space-y-2" >
+    <div class="flex justify-between items-center">
+        <img src="./assets/Open-Status.png" alt="">
+        <p class="border rounded-[50px] px-3 text-white bg-orange-300">high</p>
+    </div>
+    <h2 class="font-semibold text-xl">Fix navigation menu on mobile devices</h2>
+    <p class="text-neutral-400 text-sm">The navigation menu doesn't collapse properly on mobile devices...</p>
+    <div class="flex gap-3">
+        <p class="rounded-full px-3 border bg-orange-100 text-[#EF4444] "><i class="fa-solid fa-bug"></i> Bug</p>
+        <p class="rounded-full px-4 border bg-[#FFF8DB] text-[#D97706] ">help wanted</p>
+    </div>
+    <hr class=" border border-slate-400">
+    <p class="text-neutral-400">#1 by john_doe</p>
+    <p class="text-neutral-400">1/15/2024</p>
+   </div> -->
+   </div>
+ </main>
 <script src="./index.js"></script>
 </body>
 </html>
