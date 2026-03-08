@@ -59,7 +59,8 @@ posts.forEach(post => {
     
     const card = document.createElement('div');
     card.onclick = () => showModal(post); 
-    card.innerHTML=`<div class="card shadow-xl border-t-4 border-[#00A96E]  p-4 bg-indigo-200 space-y-2" >
+    card.innerHTML=`<div class="card  shadow-xl border-t-4 border-[#00A96E]
+      p-4 bg-teal-300 space-y-2" >
     <div class="flex justify-between items-center">
         <img src="./assets/Open-Status.png" alt="">
         <p class="border rounded-[50px] px-3

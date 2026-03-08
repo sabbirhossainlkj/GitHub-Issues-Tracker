@@ -36,10 +36,10 @@
 
 <body>
   <!-- navbar section -->
-  <div class="bg-white shadow p-4 flex justify-between items-center">
+  <div class="bg-black shadow p-4  flex justify-between items-center">
     <div class="flex gap-3 justify-center items-center">
-      <img class="w-10" src="./assets/github-logo.png" alt="">
-      <h1 class=" text-xl font-bold">GitHub Issues Tracker</h1>
+      <img class="w-10 invert" src="./assets/github-logo.png" alt="">
+      <h1 class=" text-xl font-bold text-white">GitHub Issues Tracker</h1>
     </div>
     <section class="flex justify-center">
       <div class="join">
@@ -74,20 +74,22 @@
           </div>
         </div>
         <div class="flex gap-3 items-center">
-          <p class="font-semibold text-neutral-700"><div class="badge bg-[#00A96E] badge-xs"></div> Open</p>
-          <p class="font-semibold text-neutral-700"><div class="badge bg-[#A855F7] badge-xs"></div> Closed</p>
+          <p class="font-semibold text-neutral-700">
+          <div class="badge bg-[#00A96E] badge-xs"></div> Open</p>
+          <p class="font-semibold text-neutral-700">
+          <div class="badge bg-[#A855F7] badge-xs"></div> Closed</p>
         </div>
       </div>
     </section>
     <!-- all card section -->
-    <div id="all-card" class="mt-5 w-10/12 mx-auto   grid grid-cols-4 gap-4  bg-white shadow shadow-slate-300 p-4">
+    <div id="all-card" class="mt-5 w-10/12 mx-auto  grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4  bg-white shadow shadow-slate-300 p-4">
 
 
-     
+
     </div>
 
     <!-- modal -->
-    
+
     <dialog id="issue-modal" class="modal">
       <div class="modal-box w-11/12 max-w-2xl">
 
