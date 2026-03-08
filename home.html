@@ -69,52 +69,55 @@
         <div class="flex gap-2 items-center">
           <img class="" src="./assets/Aperture.png" alt="">
           <div>
-            <h4 class="font-bold text-[15px]">50 Issues</h4>
+            <h4 id="issue-count" class="font-bold text-[15px]">0 Issues</h4>
             <p class="text-sm text-neutral-500">Track and manage your project issues</p>
           </div>
         </div>
-        <div class="flex gap-3">
-          <p class="font-semibold text-neutral-700">Open</p>
-          <p class="font-semibold text-neutral-700">Closed</p>
+        <div class="flex gap-3 items-center">
+          <p class="font-semibold text-neutral-700"><div class="badge bg-[#00A96E] badge-xs"></div> Open</p>
+          <p class="font-semibold text-neutral-700"><div class="badge bg-[#A855F7] badge-xs"></div> Closed</p>
         </div>
       </div>
     </section>
     <!-- all card section -->
-    <div id="all-card" class="mt-5 w-10/12 mx-auto  grid grid-cols-4 gap-4  bg-white shadow shadow-slate-300 p-4">
+    <div id="all-card" class="mt-5 w-10/12 mx-auto   grid grid-cols-4 gap-4  bg-white shadow shadow-slate-300 p-4">
 
 
-      <div class="card shadow p-4 bg-slate-200 space-y-2">
-        <div class="flex justify-between items-center">
-          <img src="./assets/Open-Status.png" alt="">
-          <p class="border rounded-[50px] px-3 text-white bg-orange-300">high</p>
-        </div>
-        <h2 class="font-semibold text-xl">Fix navigation menu on mobile devices</h2>
-        <p class="text-neutral-400 text-sm">The navigation menu doesn't collapse properly on mobile devices...</p>
-        <div class="flex gap-3">
-          <p class="rounded-full px-3 border
-         bg-orange-100 text-[#EF4444] "><img src="./assets/Vector (2).png" alt=""> Bug</p>
-          <p class="rounded-full px-4 border bg-[#FFF8DB] text-[#D97706] "> <img src="./assets/Vector (3).png"
-              alt="">help wanted</p>
-        </div>
-        <hr class=" border border-slate-400">
-        <p class="text-neutral-400">#1 by john_doe</p>
-        <p class="text-neutral-400">1/15/2024</p>
-      </div>
+     
     </div>
 
     <!-- modal -->
-    <!-- Open the modal using ID.showModal() method -->
-    <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
-    <dialog id="my_modal_1" class="modal">
-      <div class="modal-box">
-        <h3 class="text-lg font-bold">Hello!</h3>
-        <p class="py-4">Press ESC key or click the button below to close</p>
-        <div class="modal-action">
-          <form method="dialog">
-            <!-- if there is a button in form, it will close the modal -->
-            <button class="btn">Close</button>
-          </form>
+    
+    <dialog id="issue-modal" class="modal">
+      <div class="modal-box w-11/12 max-w-2xl">
+
+        <h3 id="modal-title" class="text-xl font-bold"></h3>
+
+        <p id="modal-meta" class="text-sm text-gray-500 mt-2"></p>
+
+        <div class="flex gap-2 mt-3">
+          <span id="modal-label1" class="badge badge-error"></span>
+          <span id="modal-label2" class="badge badge-warning"></span>
         </div>
+
+        <p id="modal-description" class="mt-4 text-gray-600"></p>
+
+        <div class="bg-gray-100 p-4 rounded-lg mt-4 flex justify-between">
+          <div>
+            <p class="text-sm text-gray-500">Assignee:sabbir hossain</p>
+            <p id="modal-assignee" class="font-semibold"></p>
+          </div>
+
+          <div>
+            <p class="text-sm text-gray-500">Priority:</p>
+            <p id="modal-priority" class="badge badge-error"></p>
+          </div>
+        </div>
+
+        <div class="modal-action">
+          <button onclick="closeModal()" class="btn btn-primary">Close</button>
+        </div>
+
       </div>
     </dialog>
   </main>
