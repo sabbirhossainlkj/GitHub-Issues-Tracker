@@ -17,7 +17,6 @@ setActiveButton('all-btn');
 const showOpen = () =>{
 const openData = allIssues.filter(item => item.status === 'open');
 displayAll(openData);
-// console.log(openData.labels)
 setActiveButton('open-btn');
 }
 
@@ -81,8 +80,10 @@ posts.forEach(post => {
         ` : ''}
     </div>
     <hr class=" border border-slate-400">
+    <div>
     <p class="text-neutral-400">#${post.id} ${post.author}</p>
     <p class="text-neutral-400">${post.createdAt}</p>
+    </div>
    </div>`;
     //3 add the appendchild
     allCard.appendChild(card)
