@@ -1,21 +1,169 @@
-1️⃣ What is the difference between var, let, and const?
-answer:
-The same variable can be declared again using var
-Variables in T can be declared again using var
-Variables in that can be declared again using var
+# 🐞 Issue Tracker Application
 
-2️⃣ What is the spread operator (...)?
-answer:
-In JavaScript the Spread Operator is used to spread the elements/properties of an array or object separately
+A dynamic Issue Tracker Web Application built with **Vanilla JavaScript** that allows users to view, filter, search, and inspect issues through an interactive UI.
 
-3️⃣ What is the difference between map(), filter(), and forEach()?
-answer:
-foreach:Performing an action on each element of an array does not return anything
-map:map creates a new array by changing the value
-filter:filter creates a new array with elements that meet the condition
+---
 
-4️⃣ What is an arrow function?
-answer:Arrow Function is a shorter way of writing functions in JavaScript.
+## 🚀 Live Features
 
-5️⃣ What are template literals?
-answer:Template Literals are a new syntax in JavaScript that is used to create strings and embed variables
+* 📡 Fetch issues from remote API
+* 📋 Display all issues dynamically
+* 🔍 Search issues by title
+* 🟢 Filter Open issues
+* 🔴 Filter Closed issues
+* 🎯 Active button state management
+* 🪟 Modal view for issue details
+* 📊 Real-time issue count update
+
+---
+
+## 🛠️ Tech Stack
+
+* **HTML5**
+* **CSS3 (Tailwind / Utility-based styling)**
+* **JavaScript (ES6)**
+* **Fetch API**
+* **DOM Manipulation**
+
+---
+
+## 📁 Project Structure
+
+```
+📦 issue-tracker
+ ┣ 📂 assets
+ ┃ ┣ Open-Status.png
+ ┃ ┣ Vector (2).png
+ ┃ ┗ Vector (3).png
+ ┣ 📜 index.html
+ ┣ 📜 script.js
+ ┗ 📜 README.md
+```
+
+---
+
+## ⚙️ Core Functionalities
+
+### 🔹 Data Fetching
+
+Fetches issues from API and stores them in a global array:
+
+```js
+let allIssues = [];
+```
+
+```js
+fetch('https://phi-lab-server.vercel.app/api/v1/lab/issues')
+```
+
+---
+
+### 🔹 Display Issues
+
+* Dynamically creates issue cards
+* Updates total issue count
+* Uses DOM manipulation
+
+```js
+displayAll(posts);
+```
+
+---
+
+### 🔹 Filtering System
+
+| Function       | Description            |
+| -------------- | ---------------------- |
+| `showAll()`    | Displays all issues    |
+| `showOpen()`   | Displays open issues   |
+| `showClosed()` | Displays closed issues |
+
+---
+
+### 🔹 Search Functionality
+
+* Searches issues based on title
+* Case-insensitive matching
+
+```js
+issue.title.toLowerCase().includes(searchValue)
+```
+
+---
+
+### 🔹 Active Button System
+
+Handles UI state switching between filters:
+
+```js
+setActiveButton(activeId);
+```
+
+---
+
+### 🔹 Modal System
+
+* Click on any issue card → opens modal
+* Displays:
+
+  * Title
+  * Author
+  * Date
+  * Description
+  * Assignee
+  * Labels
+  * Priority
+
+```js
+showModal(post);
+```
+
+---
+
+## ▶️ Getting Started
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/your-username/issue-tracker.git
+```
+
+### 2️⃣ Open Project
+
+```bash
+cd issue-tracker
+open index.html
+```
+
+---
+
+## 📊 UI Highlights
+
+* 🎨 Responsive card layout
+* 🔘 Dynamic button styles
+* 📦 Clean modal interface
+* ⚡ Fast rendering
+
+---
+
+## 🔮 Future Improvements
+
+* 🔐 Authentication system
+* 📝 Add/Edit/Delete issues
+* 🌐 Backend integration (Node.js + Database)
+* 📅 Sort by date & priority
+* 📊 Dashboard with analytics
+
+---
+
+## 👨‍💻 Author
+
+**Sabbir Hossain**
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub and share it!
+
+---
